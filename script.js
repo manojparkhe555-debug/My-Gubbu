@@ -33,13 +33,13 @@ const calendarEvents = [
 
 // Add your photo filenames after putting them in the photos folder.
 const photos = [
-  {file:"photo1.jpg", caption:"Meow Meow❤️"},
-  {file:"photo2.jpg", caption:"My mini"},
-  {file:"photo3.jpg", caption:"Diva being cold"},
-  {file:"photo4.jpg", caption:"holy moly"},
-  {file:"photo5.jpg", caption:"cant take mt eyes off."},
-  {file:"photo6.jpg", caption:"melting my soul with every look."},
-  {file:"photo7.jpg", caption:"My favorite human."}
+  {file:"photos/photo1.jpg", caption:"Meow Meow❤️"},
+  {file:"photos/photo2.jpg", caption:"My mini"},
+  {file:"photos/photo3.jpg", caption:"Diva being cold"},
+  {file:"photos/photo4.jpg", caption:"holy moly"},
+  {file:"photos/photo5.jpg", caption:"cant take mt eyes off."},
+  {file:"photos/photo6.jpg", caption:"melting my soul with every look."},
+  {file:"photos/photo7.jpg", caption:"My favorite human."}
 ];
 
 const surpriseTexts = [
