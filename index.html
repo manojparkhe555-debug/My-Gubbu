@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff5f8f">
+  <title>For Sneha ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="tiny">A little universe made only for you</div>
+      <h1>For Sneha <span>❤️</span></h1>
+      <p id="dailyMessage">Every day with you is my favorite day.</p>
+      <div class="counter-card">
+        <div class="counter-title">Our story</div>
+        <div id="loveCounter">Set your special date in <b>script.js</b> ❤️</div>
+      </div>
+      <button class="primary" onclick="showSurprise()">✨ Surprise Me</button>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <button onclick="openSection('home')">🏠</button>
+    <button onclick="openSection('messages')">💌</button>
+    <button onclick="openSection('games')">🎮</button>
+    <button onclick="openSection('story')">📖</button>
+    <button onclick="openSection('gallery')">📸</button>
+    <button onclick="openSection('calendar')">📅</button>
+  </nav>
+
+  <main>
+    <section id="home" class="section active">
+      <h2>Welcome home, Gubbu ❤️</h2>
+      <p class="intro">This isn't just an app. It's a tiny collection of our memories, stupid jokes, beautiful moments and all the reasons I love you.</p>
+      <div class="feature-grid">
+        <button class="feature" onclick="openSection('messages')">💌<b>Love Messages</b><span>Open a little love whenever you need it.</span></button>
+        <button class="feature" onclick="openSection('games')">🎮<b>Our Games</b><span>Let's see who knows whom better.</span></button>
+        <button class="feature" onclick="openSection('story')">📖<b>Our Story</b><span>Every chapter that brought us here.</span></button>
+        <button class="feature" onclick="openSection('gallery')">📸<b>Our Memories</b><span>Photos that deserve their own little museum.</span></button>
+        <button class="feature" onclick="openSection('calendar')">📅<b>Love Calendar</b><span>Our dates, anniversaries and countdowns.</span></button>
+        <button class="feature" onclick="showLetter()">💝<b>Secret Letter</b><span>A little message from me to you.</span></button>
+      </div>
+    </section>
+
+    <section id="messages" class="section">
+      <h2>💌 Love Messages</h2>
+      <div class="message-card">
+        <div id="messageText">Tap the button. I have something to tell you...</div>
+        <button class="primary" onclick="newMessage()">Give me a message ❤️</button>
+      </div>
+    </section>
+
+    <section id="games" class="section">
+      <h2>🎮 Love Games</h2>
+
+      <div class="game-card">
+        <h3>❤️ How Well Do You Know Us?</h3>
+        <p id="quizQuestion">Press start to begin.</p>
+        <div id="quizOptions"></div>
+        <button class="primary" onclick="startQuiz()">Start / Restart Quiz</button>
+        <p id="quizScore"></p>
+      </div>
+
+      <div class="game-card">
+        <h3>💘 Pick a Heart</h3>
+        <p>Choose one. Each heart hides a tiny surprise.</p>
+        <div class="heart-grid" id="heartGrid"></div>
+        <p id="heartResult"></p>
+      </div>
+    </section>
+
+    <section id="story" class="section">
+      <h2>📖 Our Story</h2>
+      <div id="timeline" class="timeline"></div>
+    </section>
+
+    <section id="gallery" class="section">
+      <h2>📸 Our Little Gallery</h2>
+      <p class="hint">Put your pictures inside the <b>photos</b> folder and update the filenames in <b>script.js</b>.</p>
+      <div id="galleryGrid" class="gallery-grid"></div>
+    </section>
+
+    <section id="calendar" class="section">
+      <h2>📅 Love Calendar</h2>
+      <p class="hint">Edit the dates in <b>script.js</b> to add your own memories.</p>
+      <div id="calendarList" class="calendar-list"></div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal" onclick="closeModal(event)">
+    <div class="modal-box">
+      <button class="close" onclick="closeModal()">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <footer>Made with way too much love ❤️</footer>
+  <script src="script.js"></script>
+</body>
+</html>
